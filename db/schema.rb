@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20140120212345) do
     t.string   "name"
     t.string   "address"
     t.string   "state"
-    t.string  "zipcode"
+    t.string   "zipcode"
     t.string   "description"
     t.string   "website"
     t.date     "datecreated"
