@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140120212345) do
+ActiveRecord::Schema.define(version: 20140123002526) do
 
   create_table "beer_bars", force: true do |t|
     t.integer  "bb_id"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20140120212345) do
     t.date     "datecreated"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
   end
 
 end
