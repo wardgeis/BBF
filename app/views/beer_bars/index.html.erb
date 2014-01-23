@@ -1,40 +1,15 @@
 <h1>Listing beer_bars</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Bb</th>
-      <th>Name</th>
-      <th>Address</th>
-      <th>State</th>
-      <th>Zipcode</th>
-      <th>Description</th>
-      <th>Website</th>
-      <th>Datecreated</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @beer_bars.each do |beer_bar| %>
-      <tr>
-        <td><%= beer_bar.bb_id %></td>
-        <td><%= beer_bar.name %></td>
-        <td><%= beer_bar.address %></td>
-        <td><%= beer_bar.state %></td>
-        <td><%= beer_bar.zipcode %></td>
-        <td><%= beer_bar.description %></td>
-        <td><%= beer_bar.website %></td>
-        <td><%= beer_bar.datecreated %></td>
-        <td><%= link_to 'Show', beer_bar %></td>
-        <td><%= link_to 'Edit', edit_beer_bar_path(beer_bar) %></td>
-        <td><%= link_to 'Destroy', beer_bar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <% @beer_bars.each do |beer_bar| %>
+    <%= link_to beer_bar.name, beer_bar %>
+    <%= beer_bar.city %>
+    <%= beer_bar.state %>
+    <%= beer_bar.website %>
+    <!-- <%= link_to 'Show', beer_bar %>
+    <%= link_to 'Edit', edit_beer_bar_path(beer_bar) %>
+    <%= link_to 'Destroy', beer_bar, method: :delete, data: { confirm: 'Are you sure?' } %> -->
+  <% end %>
 
 <br>
 
