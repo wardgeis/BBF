@@ -2,13 +2,14 @@
 
 
   <% @beer_bars.each do |beer_bar| %>
-    <%= link_to beer_bar.name, beer_bar %>
-    <%= beer_bar.city %>
-    <%= beer_bar.state %>
-    <%= beer_bar.website %>
+    <strong><%= link_to beer_bar.name, beer_bar %></strong><br>
+    <%= beer_bar.city %><br>
+    <%= beer_bar.state %><br>
+    <%= beer_bar.website %><br>
     <!-- <%= link_to 'Show', beer_bar %>
     <%= link_to 'Edit', edit_beer_bar_path(beer_bar) %>
     <%= link_to 'Destroy', beer_bar, method: :delete, data: { confirm: 'Are you sure?' } %> -->
+    <br><br>
   <% end %>
 
 <br>

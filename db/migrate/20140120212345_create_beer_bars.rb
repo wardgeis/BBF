@@ -4,6 +4,7 @@ class CreateBeerBars < ActiveRecord::Migration
       t.integer :bb_id
       t.string :name
       t.string :address
+      t.string :city
       t.string :state
       t.string :zipcode
       t.string :description
